@@ -135,7 +135,7 @@ body {
   fill: currentColor;
 }
 
-.is-hidden{
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -578,15 +578,13 @@ body {
   top: 80px;
   left: 50%;
   transform: translate(-50%, 0%);
- 
-
   background-color: var(--modal-background-color);
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
 }
 
-.close-btn{
+.close-btn {
   position: absolute;
   right: 24px;
   top: 24px;
