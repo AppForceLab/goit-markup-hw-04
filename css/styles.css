@@ -103,7 +103,7 @@ body {
 
 .social-media {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -121,14 +121,13 @@ body {
   height: 100%;
   background-color: var(--active-color);
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
   color: var(--ligth-background-color);
-  background-color: var(--valid-color);
+  background-color: #404bbf;
 }
 
 .social-icon {
@@ -146,6 +145,7 @@ body {
 /* ========== HEADER ========== */
 .page-header {
   border-bottom: 1px solid var(--accent-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08); 
 }
 
 .header-cover {
@@ -197,7 +197,7 @@ body {
   color: var(--hover-color);
 }
 
-.menu-item {
+.menu-link {
   position: relative;
 }
 
@@ -209,7 +209,7 @@ body {
   display: block;
   position: absolute;
   z-index: 1;
-  bottom: 0px;
+  bottom: -1px;
   content: '';
   height: 4px;
   width: 100%;
@@ -252,6 +252,8 @@ body {
     ),
     url(../images/office.jpg);
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   padding: 188px 0;
   margin: 0 auto;
   max-width: 1440px;
@@ -307,6 +309,7 @@ body {
   height: 112px;
   margin-bottom: 8px;
   background-color: var(--ligth-background-color);
+  border-radius: 4px;
 }
 
 .benefits-card-title {
